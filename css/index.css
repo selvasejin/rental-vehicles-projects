@@ -464,12 +464,14 @@ footer{
     font-size: 80px;
   }
 
-  .home-content h1 {
-    font-size: 80px;
+  .home-content {
+    top: 45%;
+    width: 80%;
   }
 
   .down {
     width: 100%;
   }
 }
+
 
