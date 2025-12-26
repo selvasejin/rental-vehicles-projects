@@ -344,7 +344,7 @@ footer {
   }
   .vehicle-image {
     height: 250px;
-    
+    width: 100%;
   }
 
   /* .vehicle-details{
@@ -469,3 +469,4 @@ footer {
     width: 100%;
   }
 }
+
