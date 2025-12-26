@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: #F5D7B3;
+  background-image: linear-gradient(180deg,rgba(245, 215, 179, 1) 0%,rgba(248, 233, 217, 1) 49%,rgba(255, 255, 255, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #222;
+  line-height: 2;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #ffffff85;
+}
+main{
+  margin-top: 70px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand .logo {
+  width: 60px;
+}
+.flexi {
+  color: rgb(230, 122, 28);
+}
+.ride {
+  color: rgb(238, 176, 25);
+}
+nav {
+  padding: 10px;
+}
+nav .navigation {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: 550;
+}
+nav .navigation:hover {
+  border-radius: 8px;
+  background-color: rgba(207, 199, 199, 0.42);
+  cursor: pointer;
+}
+nav div{
+  display: inline;
+  
+}
+nav div img{
+  width: 30px;
+}
+nav div .login {
+  background: linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  border-radius: 5px;
+}
+.login-reg {
+  background-color: rgba(245, 222, 179, 0.671);
+  width: 100%;
+  height: 100vh;
+  margin-top: -70px;
+  z-index: 250;
+  position: absolute;
+}
+
+.login-reg div {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 160px;
+  text-align: center;
+  z-index: 999;
+  width: 300px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  background:linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  opacity: 1;
+}
+
+.login-reg input {
+ width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.login-reg button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(3, 6, 23);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-reg button:hover {
+  background: rgb(30, 41, 59);
+  transform: translateY(-1px);
+}
+
+.login-reg h3 {
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: rgb(30, 41, 59);
+}
+
+.login-reg h3 a {
+  cursor: pointer;
+  color: rgb(30, 41, 59);
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.login-reg h3 a:hover {
+  opacity: 0.8;
+}
+
+.login-reg label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(30, 41, 59);
+}
+main{
+    margin-top: 90px;
+    margin-left: 60px ;
+    margin-right: 60px;
+    padding: 30px 30px;
+}
+section{
+    background-color: #fff;
+    padding: 25px 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+section h2{
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: #d1a515;
+}
+section p {
+    font-size: 15px;
+    color: #444;
+}
+section ul {
+    padding-left: 20px;
+}
+section ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+footer{
+  background-color: #020617;
+  color:#cbd5e1;
+  font-size: 15px;
+}
+.down{
+  width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.down1 h3,.down2 h3,.down3 h3,.down4 h3{
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.down1 p,.down2 p,.down3 p{
+  line-height: 1.6;
+  color: #94a3b8;
+}
+.down2 ul,.down3 ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.down2 ul li,.down3 ul li{
+  margin-bottom: 8px;
+}
+.down2 ul li a,.down3 ul li a{
+  color: #94a3b8;
+  text-decoration: none;
+
+}
+.down2 ul li a:hover,.down3 ul li a:hover{
+  color: #ff9800;
+}
+.icon {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+}
+.icon a {
+  color: #94a3b8;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon a:hover {
+  color: #ff9800;
+  transform: scale(1.2);
+}
+.bottom {
+  border-top: 1px solid #1e293b;
+  padding: 15px;
+  text-align: center;
+}
+
+.bottom p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.bottom .author {
+  color: rgb(255, 152, 0);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 5px 0 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .navigation {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .brand .logo {
+    width: 45px;
+  }
+
+  main {
+    margin-top: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  section {
+    padding: 18px 16px;
+  }
+
+  section h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  section p,
+  section ul li {
+    font-size: 14px;
+  }
+
+  .login-reg div {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 120px;
+    width: 90%;
+  }
+
+  .down {
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px) {
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .brand .logo {
+    width: 55px;
+  }
+
+  nav .navigation {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  main {
+    margin-top: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+  }
+
+  section {
+    padding: 22px 30px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  .login-reg div {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 140px;
+  }
+
+  .down {
+    width: 100%;
+    padding: 40px 30px;
+  }
+}
+@media screen and (min-width: 901px) {
+
+  main {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  section {
+    padding: 25px 50px;
+  }
+
+  .down {
+    width: 1200px;
+  }
+}
+

@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #f5d7b3;
+  background-image: linear-gradient(180deg,rgba(245, 215, 179, 1) 0%,rgba(248, 233, 217, 1) 49%,rgba(255, 255, 255, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html {
+    scroll-behavior: smooth;
+}
+.search{
+  padding-left: 300px ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 70px;
+  z-index: 500;
+  background: whitesmoke;
+}
+.search label{
+  font-size: 20px;
+  font-style: oblique;
+  color: rgb(141, 59, 4);
+}
+.search select{
+  width: 250px;
+  height: 35px;
+  border-radius: 6px;
+  border: rgb(230, 122, 28) 1px;
+  text-align: center;
+  color: rgb(30, 41, 59);
+  font-style: oblique;
+  font-weight: 800;
+  background-color: rgb(245, 215, 179);
+  background-image: linear-gradient(180deg,rgba(245, 215, 179, 1) 0%,rgba(248, 233, 217, 1) 49%,rgba(255, 255, 255, 1) 100%);
+}
+.search select option{
+  color: #1e293b;
+  font-style: oblique;
+  font-weight: 800;
+  background: rgb(245, 215, 179);
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: whitesmoke;
+}
+main {
+  margin-top: 70px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand .logo {
+  width: 60px;
+}
+.brand h1{
+  text-shadow: 1px 1px 1px white;
+}
+.flexi {
+  color: rgb(230, 122, 28);
+}
+.ride {
+  color: rgb(238, 176, 25);
+}
+nav {
+  padding: 10px;
+}
+nav .navigation {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: 550;
+}
+nav .navigation:hover {
+  border-radius: 8px;
+  background-color: rgba(207, 199, 199, 0.42);
+  cursor: pointer;
+}
+nav div{
+  display: inline;
+  
+}
+nav div img{
+  width: 30px;
+}
+nav div .login {
+  background: linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  border-radius: 5px;
+}
+section {
+  padding: 40px 60px;
+  scroll-margin-top: 110px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.vehicles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.vehicle-section {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicle-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.vehicle-section img {
+  width: 220px;
+  height: 160px;
+  object-fit: contain;
+  margin: 0 auto 15px;
+}
+
+.vehicle-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.vehicle-section .model {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.vehicle-info {
+  display: grid;
+  justify-content: space-around;
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.price p {
+  font-size: 14px;
+  color: #333;
+}
+
+.price strong {
+  font-size: 18px;
+  color: rgb(230, 122, 28);
+}
+
+.price span {
+  font-size: 13px;
+  color: rgb(102, 102, 102);
+  margin-left: 2px;
+}
+
+.book {
+  margin-top: auto;
+  padding: 12px;
+  border: none;
+  background: linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(230, 122, 28, 0.35);
+}
+
+
+.login-reg {
+  background-color: rgba(245, 222, 179, 0.671);
+  width: 100%;
+  height: 100vh;
+  margin-top: -70px;
+  z-index: 250;
+  position: absolute;
+}
+
+.login-reg div {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 200px;
+  text-align: center;
+  z-index: 999;
+  width: 300px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  background:linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  opacity: 1;
+}
+
+.login-reg input {
+ width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.login-reg button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(3, 6, 23);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-reg button:hover {
+  background: rgb(30, 41, 59);
+  transform: translateY(-1px);
+}
+
+.login-reg h3 {
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: rgb(30, 41, 59);
+}
+
+.login-reg h3 a {
+  cursor: pointer;
+  color: rgb(30, 41, 59);
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.login-reg h3 a:hover {
+  opacity: 0.8;
+}
+
+.login-reg label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(30, 41, 59);
+}
+footer {
+  background-color: rgb(2, 6, 23);
+  color: rgb(203, 213, 225);
+  font-size: 15px;
+}
+.down {
+  width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.down1 h3,.down2 h3,.down3 h3,.down4 h3 {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.down1 p,.down2 p,.down3 p {
+  line-height: 1.6;
+  color: rgb(148, 163, 184);
+}
+.down2 ul,.down3 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.down2 ul li,.down3 ul li {
+  margin-bottom: 8px;
+}
+.down2 ul li a,.down3 ul li a {
+  color: rgb(148, 163, 184);
+  text-decoration: none;
+}
+.down2 ul li a:hover,.down3 ul li a:hover {
+  color: rgb(255, 152, 0);
+}
+.icon {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+}
+.icon a {
+  color: rgb(148, 163, 184);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon a:hover {
+  color: rgb(255, 152, 0);
+  transform: scale(1.2);
+}
+.bottom {
+  border-top: 1px solid rgb(30, 41, 59);
+  padding: 15px;
+  text-align: center;
+}
+
+.bottom p {
+  margin: 0;
+  color: rgb(148, 163, 184);
+}
+
+.bottom .author {
+  color: rgb(255, 152, 0);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .navigation {
+    padding: 8px 10px;
+    font-size: 17px;
+  }
+
+  .brand .logo {
+    width: 50px;
+  }
+
+  main {
+    margin-top: 120px;
+  }
+
+  .search {
+    padding: 10px 15px;
+    margin-top: -20px;
+  }
+
+  .search label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 18px;
+  }
+
+  .search select {
+    width: 100%;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .vehicles {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .vehicle-section img {
+    width: 220px;
+    height: 150px;
+  }
+
+  .vehicle-info {
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+
+  .price {
+    justify-content: space-around;
+  }
+
+  .login-reg {
+    margin-top: -100px;
+  }
+
+  .login-reg div {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 250px;
+    width: 65%;
+  }
+
+  .down {
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px) {
+
+  header {
+    padding: 10px 20px;
+    
+  }
+
+  .brand .logo {
+    width: 55px;
+  }
+
+  nav .navigation {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  main {
+    margin-top: 80px;
+  }
+
+  .search {
+    padding-left: 20px;
+    top: 80px;
+  }
+
+  .search select {
+    width: 220px;
+  }
+
+  section {
+    padding: 35px 30px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .vehicles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vehicle-section img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .login-reg div {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 150px;
+  }
+
+  .down {
+    width: 100%;
+    padding: 40px 30px;
+    
+  }
+  
+}
+@media screen and (min-width: 901px) {
+
+  .vehicles {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .search {
+    padding-left: 300px;
+    width: 100%;
+  }
+
+  .down {
+    width: 1200px;
+  }
+}
+

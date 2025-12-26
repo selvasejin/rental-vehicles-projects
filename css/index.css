@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #F5D7B3;
+  background-image: linear-gradient(180deg,rgb(247, 226, 201) 0%,rgba(248, 233, 217, 1) 49%,rgba(255, 255, 255, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand .logo {
+  width: 60px;
+}
+.brand h1{
+  text-shadow: 1px 1px 1px white;
+}
+.flexi {
+  color: rgb(223, 117, 25);
+}
+
+.ride {
+  color: rgb(238, 176, 25);
+}
+
+nav {
+  padding: 10px;
+}
+
+nav .navigation {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: 550;
+}
+
+nav .navigation:hover {
+  border-radius: 8px;
+  background-color: #cec8c86b;
+  cursor: pointer;
+}
+
+nav div{
+  display: inline;
+  
+}
+nav div img{
+  width: 30px;
+}
+nav div .login {
+  background: linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  border-radius: 5px;
+  
+}
+
+.home img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.home-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home .home-content .home-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.home-content h1 {
+  font-size: 80px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
+}
+
+.home-content p {
+  font-size: large;
+  color: rgb(247, 229, 196);
+  text-shadow: 1px 1px 2px black;
+}
+
+.home-content .button {
+  background: linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  padding: 12px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(228, 150, 4, 0.921);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.home-content .button:hover {
+  background: rgb(230, 122, 28);
+}
+
+.home-content .home-content1 {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-reg {
+  background-color: rgba(245, 222, 179, 0.671);
+  width: 100%;
+  height: 100vh;
+  margin-top: -645px;
+  z-index: 250;
+  position: absolute;
+}
+
+.login-reg div {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 200px;
+  text-align: center;
+  z-index: 999;
+  width: 300px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  background:linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  opacity: 1;
+}
+
+.login-reg input {
+ width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.login-reg button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(2, 6, 23);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-reg button:hover {
+  background: rgb(30, 41, 59);
+  transform: translateY(-1px);
+}
+
+.login-reg h3 {
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: rgb(30, 41, 59);
+}
+
+.login-reg h3 a {
+  cursor: pointer;
+  color: rgb(30, 41, 59);
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.login-reg h3 a:hover {
+  opacity: 0.8;
+}
+
+.login-reg label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(15, 23, 42);
+}
+.login-reg span {
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: darkred;
+}
+.login-reg span ul{
+  text-align: left;
+  margin-left: 15px;
+}
+
+footer{
+  background-color: rgb(2, 6, 23);
+  color:rgb(203, 213, 225);
+  font-size: 15px;
+}
+
+.down{
+  width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.down1 h3,.down2 h3,.down3 h3,.down4 h3{
+  color: white;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.down1 p,.down2 p,.down3 p{
+  line-height: 1.6;
+  color: rgb(148, 163, 184);
+}
+
+.down2 ul,.down3 ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.down2 ul li,.down3 ul li{
+  margin-bottom: 8px;
+}
+
+.down2 ul li a,.down3 ul li a{
+  color: rgb(148, 163, 184);
+  text-decoration: none;
+}
+
+.down2 ul li a:hover,.down3 ul li a:hover{
+  color: rgb(255, 152, 0);
+}
+
+.icon {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+}
+
+.icon a {
+  color: rgb(148, 163, 184);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon a:hover {
+  color: rgb(255, 153, 0);
+  transform: scale(1.2);
+}
+
+.bottom {
+  border-top: 1px solid rgb(30, 41, 59);
+  padding: 15px;
+  text-align: center;
+}
+
+.bottom p {
+  margin: 0;
+  color: rgb(148, 163, 184);
+}
+
+.bottom .author {
+  color: rgb(255, 152, 0);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+
+  header {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .navigation {
+    padding: 8px 10px;
+    font-size: 17px;
+  }
+
+  .brand .logo {
+    width: 50px;
+  }
+
+  .home img {
+    height: 100vh;
+    
+  }
+
+  .home-content {
+    top: 50%;
+    width: 100%;
+  }
+
+  .home .home-content .home-logo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .home-content h1 {
+    font-size: 45px;
+  }
+
+  .home-content p {
+    font-size: 17px;
+    color: rgb(31, 30, 30);
+    text-shadow: 1px 1px 2px whitesmoke;
+  }
+
+  .home-content .button {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  .login-reg {
+    margin-top: -1100px;
+  }
+
+  .login-reg div {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 350px;
+    width: 65%;
+  }
+
+  .down {
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+}
+
+
+@media screen and (min-width: 651px) and (max-width: 900px) {
+
+  header {
+    padding: 20px;
+  }
+
+  .brand .logo {
+    width: 60px;
+  }
+
+  nav .navigation {
+    padding: 8px;
+    font-size: 17px;
+  }
+
+  .home-content {
+    top: 35%;
+    width: 80%;
+  }
+
+  .home .home-content .home-logo {
+    width: 210px;
+    height: 210px;
+  }
+
+  .home-content h1 {
+    font-size: 75px;
+  }
+
+  .home-content p {
+    font-size: 22px;
+  }
+
+  .login-reg {
+    margin-top: -1100px;
+  }
+
+  .login-reg div {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 280px;
+    width: 350px;
+  }
+
+  .down {
+    width: 100%;
+    padding: 40px 30px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+
+  header {
+    position: absolute;
+  }
+
+  .home-content h1 {
+    font-size: 80px;
+  }
+
+  .down {
+    width: 100%;
+  }
+}

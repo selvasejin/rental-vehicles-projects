@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #f5d7b3;
+  background-image: linear-gradient(
+    180deg,
+    rgba(245, 215, 179, 1) 0%,
+    rgba(248, 233, 217, 1) 49%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #ffffff85;
+}
+main {
+  margin-top: 50px;
+  padding: 110px 80px 40px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand .logo {
+  width: 60px;
+}
+.flexi {
+  color: rgb(230, 122, 28);
+}
+.ride {
+  color: rgb(238, 176, 25);
+}
+nav {
+  padding: 10px;
+}
+nav .navigation {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: 550;
+}
+nav .navigation:hover {
+  border-radius: 8px;
+  background-color: rgba(207, 199, 199, 0.42);
+  cursor: pointer;
+}
+nav div{
+  display: inline;
+  
+}
+nav div img{
+  width: 30px;
+}
+nav div .login {
+  background: linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  border-radius: 5px;
+}
+.login-reg {
+  background-color: rgba(245, 222, 179, 0.671);
+  width: 100%;
+  height: 100vh;
+  margin-top: -70px;
+  z-index: 250;
+  position: absolute;
+}
+
+.login-reg div {
+  
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 160px;
+  width: 300px;
+  text-align: center;
+  z-index: 999;
+  width: 300px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  background:linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  opacity: 1;
+}
+
+.login-reg input {
+ width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.login-reg button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(3, 6, 23);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-reg button:hover {
+  background: rgb(30, 41, 59);
+  transform: translateY(-1px);
+}
+
+.login-reg h3 {
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: rgb(30, 41, 59);
+}
+
+.login-reg h3 a {
+  cursor: pointer;
+  color: rgb(30, 41, 59);
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.login-reg h3 a:hover {
+  opacity: 0.8;
+}
+
+.login-reg label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(30, 41, 59);
+}
+.vehicle-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 40px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.vehicle-image {
+  height: 380px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+}
+
+.vehicle-details h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.specs {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.notes {
+  background: #f7f7f7;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+.pricing {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.pricing span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.pricing small {
+  color: #666;
+}
+
+
+.book-btn {
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, rgb(230, 122, 28), rgb(238, 176, 25));
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  opacity: 0.9;
+}
+
+footer {
+  background-color: #020617;
+  color: #cbd5e1;
+  font-size: 15px;
+}
+.down {
+  width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.down1 h3,
+.down2 h3,
+.down3 h3,
+.down4 h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.down1 p,
+.down2 p,
+.down3 p {
+  line-height: 1.6;
+  color: #94a3b8;
+}
+.down2 ul,
+.down3 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.down2 ul li,
+.down3 ul li {
+  margin-bottom: 8px;
+}
+.down2 ul li a,
+.down3 ul li a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+.down2 ul li a:hover,
+.down3 ul li a:hover {
+  color: #ff9800;
+}
+.icon {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+}
+.icon a {
+  color: #94a3b8;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon a:hover {
+  color: #ff9800;
+  transform: scale(1.2);
+}
+.bottom {
+  border-top: 1px solid #1e293b;
+  padding: 15px;
+  text-align: center;
+}
+
+.bottom p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.bottom .author {
+  color: #ff9800;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 650px) {
+
+  header {
+    position: relative;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  nav .navigation {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .brand .logo {
+    width: 45px;
+  }
+
+  main {
+    margin-top: 20px;
+    padding: 20px 15px;
+  }
+
+  .vehicle-card {
+    grid-template-columns: 1fr;
+    padding: 18px;
+    gap: 20px;
+  }
+  .vimg{
+    display: flex;
+    justify-content: center; 
+  }
+  .vehicle-image {
+    height: 250px;
+    
+  }
+
+  /* .vehicle-details{
+    justify-items: center;
+  } */
+
+  .vehicle-details h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .tagline {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .specs {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .pricing {
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .login-reg div {
+    width: 90%;
+    margin-top: 120px;
+  }
+
+  .down {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px) {
+
+  header {
+    position: fixed;
+    padding: 12px 20px;
+  }
+
+  nav .navigation {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .brand .logo {
+    width: 55px;
+  }
+
+  main {
+    padding: 90px 30px 40px;
+  }
+
+  .vehicle-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .vimg{
+    display: flex;
+    justify-content: center; 
+  }
+  .vehicle-image {
+    height: 300px;
+  }
+
+  .vehicle-details h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .tagline {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .pricing {
+    gap: 20px;
+  }
+
+  .login-reg div {
+    width: 340px;
+    margin-top: 150px;
+  }
+
+  .down {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
+@media screen and (min-width: 901px) {
+
+  main {
+    padding: 110px 80px 40px;
+  }
+
+  .vehicle-card {
+    grid-template-columns: 1.1fr 1.4fr;
+  }
+
+  .vehicle-image {
+    height: 380px;
+  }
+
+  .pricing {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .login-reg div {
+    width: 300px;
+    margin-top: 200px;
+  }
+
+  .down {
+    width: 100%;
+  }
+}
