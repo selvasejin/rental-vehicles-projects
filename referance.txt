@@ -1,0 +1,297 @@
+
+cycles- 
+	1.Urban Terrain Rogue
+		Type: MTB
+		Fuel: None
+		Seat: 1
+		Gears: 21-speed
+		Specifications: Front suspension, dual disc brakes, steel frame
+		Price/hr: ₹20
+		Price/day: ₹120
+		Description: Suitable for city rides + mild off-road.
+		Conditions: Damage to gears/brakes will be charged; return clean.
+
+	2.Leader Lady Star Breeze 26T 
+		Type: City/Comfort Cycle (Ladies)
+		Fuel: None
+		Seat: 1
+		Gears: Single-speed
+		Specifications: Step-through frame, basket, caliper brakes
+		Price/hr: ₹15
+		Price/day: ₹100
+		Description: Easy for short city commutes.
+		Conditions: Basket misuse not allowed.
+
+	3.ralley gold rally popular
+		Type: City Cycle
+		Fuel: None
+		Seat: 1
+		Gears: Single-speed
+		Specifications: Steel frame, caliper brakes
+		Price/hr: ₹15
+		Price/day: ₹100
+		Description: Basic cycle for short rides.
+		Conditions: Avoid riding on rough trails.
+
+	4.Leader Xtreme MTB 26T IBC Mountain
+		Type: MTB
+		Fuel: None
+		Seat: 1
+		Gears: 18-speed
+		Specifications: Front suspension, disc brakes
+		Price/hr: ₹20
+		Price/day: ₹130
+		Description: Good for trails and uneven roads.
+		Conditions: Heavy off-roading damage chargeable.
+
+	5.Leader Beast 26T IBC Premium Rigid City
+		Type: City MTB (Rigid)
+		Fuel: None
+		Seat: 1
+		Gears: Single-speed
+		Specifications: Rigid fork, wide tyres
+		Price/hr: ₹18
+		Price/day: ₹120
+		Description: Strong frame, ideal for city + slightly rough roads.
+		Conditions: Tyre damage will be billed.
+
+bikes-
+	1.honda shine 125
+		Type: Commuter
+		Fuel: Petrol
+		Seat: 2
+		Mileage: 55–60 km/l
+		Gears: 5-speed
+		Specifications: 124cc, CBS, smooth suspension
+		Price/hr: ₹60
+		Price/day: ₹450
+		Description: Best for city use, reliable & low fuel cost.
+		Conditions: No harsh acceleration, return with same fuel.
+
+	2.Ather 450X
+		Type: Electric Scooter
+		Fuel: Electric
+		Seat: 2
+		Mileage: 85–105 km/charge
+		Gears: Automatic
+		Specifications: 6 kW motor, fast charging
+		Price/hr: ₹70
+		Price/day: ₹550
+		Description: Silent, quick, ideal for urban trips.
+		Conditions: Return with minimum 40% battery.
+
+	3.Bajaj Pulsar 150
+		Type: Street Bike
+		Fuel: Petrol
+		Seat: 2
+		Mileage: 45–50 km/l
+		Gears: 5-speed
+		Specifications: 149cc, strong mid-range
+		Price/hr: ₹80
+		Price/day: ₹600
+		Description: Good for mixed city/highway.
+		Conditions: No stunt riding.
+
+	4.Royal Enfield Classic 350
+		Type: Cruiser
+		Fuel: Petrol
+		Seat: 2
+		Mileage: 30–35 km/l
+		Gears: 5-speed
+		Specifications: 349cc, ABS, high torque
+		Price/hr: ₹120
+		Price/day: ₹900
+		Description: Premium feel, great for long rides.
+		Conditions: Full inspection required on return.
+
+	5.Royal Enfield Himalayan
+		Type: Adventure
+		Fuel: Petrol
+		Seat: 2
+		Mileage: 28–32 km/l
+		Gears: 5-speed
+		Specifications: 411cc, long-travel suspension
+		Price/hr: ₹140
+		Price/day: ₹1100
+		Description: Designed for rough roads & touring.
+		Conditions: Off-road damage chargeable.
+
+	6.TVS Apache RTR 160
+		Type: Sports Commuter
+		Fuel: Petrol
+		Seat: 2
+		Mileage: 45–50 km/l
+		Gears: 5-spee
+		Specifications: 159cc, aggressive pickup
+		Price/hr: ₹70
+		Price/day: ₹500
+		Description: Quick and sporty for city.
+		Conditions: Speed limit applies.
+
+	7.TVS iQube
+		Type: Electric Scooter
+		Fuel: Electric
+		Seat: 2
+		Mileage: 90–100 km/charge
+		Gears: Automatic
+		Specifications: 4.4 kW motor, TFT display
+		Price/hr: ₹65
+		Price/day: ₹500
+		Description: Smooth EV for daily errands.
+		Conditions: Return with charger + 40% battery.
+
+	8.TVS Star City Plus
+		Type: Commuter
+		Fuel: Petrol
+		Seat: 2
+		Mileage: 65–70 km/l
+		Gears: 4-speed
+		Specifications: 110cc, Eco-thrust engine
+		Price/hr: ₹55
+		Price/day: ₹400
+		Description: Low running cost, good for students.
+		Conditions: Moderate load only.
+
+cars-
+	1.Honda City
+		Type: Sedan
+		Fuel: Petrol
+		Seats: 5
+		Gears: Manual/Automatic
+		Roof: Hard top
+		Price/hr: ₹250
+		Price/day: ₹2000
+		Description: Comfortable premium sedan.
+		Conditions: No smoking, return clean.
+
+	2.Hyundai Grand i10 Nios
+		Type: Hatchback
+		Fuel: Petrol
+		Seats: 5
+		Gears: Manual/AMT
+		Roof: Hard top
+		Price/hr: ₹180
+		Price/day: ₹1400
+		Description: Best for city trips.
+		Conditions: KM limit per day (~150 km).
+
+	3.Hyundai i20
+		Type: Premium Hatchback
+		Fuel: Petrol
+		Seats: 5
+		Gears: Manual/Automatic
+		Roof: Hard top
+		Price/hr: ₹220
+		Price/day: ₹1700
+		Description: Spacious & feature-rich.
+		Conditions: No off-road use.
+
+	3.Hyundai Verna
+		Type: Sedan
+		Fuel: Petrol
+		Seats: 5
+		Gears: Manual/Automatic
+		Roof: Hard top
+		Price/hr: ₹260
+		Price/day: ₹2100
+		Description: Stylish sedan with strong performance.
+		Conditions: Security deposit higher.
+
+	4.Mahindra Bolero
+		Fuel: Diesel
+		Seats: 7
+		Gears: Manual
+		Roof: Hard top
+		Price/hr: ₹300
+		Price/day: ₹2200
+		Description: Rugged, rural-friendly vehicle.
+		Conditions: High cleaning charges if returned dirty.
+
+	5.Maruti Ertiga
+		Type: MUV
+		Fuel: Petrol/CNG
+		Seats: 7
+		Gears: Manual/Automatic
+		Roof: Hard top
+		Price/hr: ₹280
+		Price/day: ₹2000
+		Description: Best family / group rental.
+		Conditions: Extra charge for CNG refilling mismatch.
+
+	6.Maruti Suzuki Dzire
+		Type: Compact Sedan
+		Fuel: Petrol
+		Seats: 5
+		Gears: Manual/AMT
+		Roof: Hard top
+		Price/hr: ₹200
+		Price/day: ₹1500
+		Description: Cheap to run, good for city.
+		Conditions: No long-hill driving.
+
+	7.Maruti Suzuki Swift
+		Type: Hatchback
+		Fuel: Petrol
+		Seats: 5
+		Gears: Manual/AMT
+		Roof: Hard top
+		Price/hr: ₹190
+		Price/day: ₹1400
+		Description: Fun-to-drive, light and efficient.
+		Conditions: KM limit applies.
+
+	8.MG Zs EV
+		Type: Electric SUV
+		Fuel: Electric
+		Seats: 5
+		Gears: Automatic
+		Roof: Hard top / Sunroof (varies)
+		Price/hr: ₹350
+		Price/day: ₹2600
+		Description: Premium EV with strong range.
+		Conditions: Must return with ≥50% charge.
+
+	9.Tata Tiago EV
+		Type: Electric Hatchback
+		Fuel: Electric
+		Seats: 5
+		Gears: Automatic
+		Roof: Hard top
+		Price/hr: ₹220
+		Price/day: ₹1600
+		Description: Affordable EV for city drives.
+		Conditions: Battery health check at return.
+
+	10.Toyota Hyryder
+		Type: Hybrid SUV
+		Fuel: Petrol/Hybrid
+		Seats: 5
+		Gears: Automatic
+		Roof: Panoramic roof available
+		Price/hr: ₹330
+		Price/day: ₹2500
+		Description: High fuel efficiency + comfort.
+		Conditions: No towing allowed.
+
+	11.Toyota Innova Crysta
+		Type: Premium MUV
+		Fuel: Diesel
+		Seats: 7
+		Gears: Manual/Automatic
+		Roof: Hard top
+		Price/hr: ₹380
+		Price/day: ₹3000
+		Description: Long-distance king, best for family trips.
+		Conditions: High security deposit.
+
+	12.Maruti Suzuki Baleno
+		Type: Hatchback (Premium)
+		Fuel: Petrol / CNG
+		Seats: 5
+		Gears: Manual / Automatic
+		Roof: Hard top
+		Mileage: ~22 km/l (Petrol), ~30 km/kg (CNG)
+		Price/hr: ₹280
+		Price/day: ₹2000
+		Description: Comfortable premium hatchback ideal for city travel, couples, and small families.
+		Conditions:  Late return charged per additional hour
