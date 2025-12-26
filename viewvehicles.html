@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexiRide- View Vehicle</title>
+    <link rel="stylesheet" href="css/viewvechicles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="image/flexiride logo1.png">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="image/flexiride logo1.png" alt="" class="logo">
+            <h1><i><span class="flexi">Flexi</span><span class="ride">Ride</span></i></h1>
+        </div>
+        <nav id="nav">
+            <a href="index.html" class="navigation">Home</a>
+            <a href="vehicles.html" class="navigation">Vehicles</a>
+            <a href="aboutus.html" class="navigation">About Us</a>
+            <div class="navigation" id="navigation"></div>
+        </nav>
+    </header> 
+    <div id="login-reg" ></div>
+    <main class="container">
+    <section class="vehicle-card" id="vehicle"></section>
+    </main>
+    <footer>
+        <div class="down">
+            <div class="down1">
+                <h3>About Project</h3>
+                <p>This project is independently designed and develop by <span>Selva Sejin</span>. All content and functionality are part of academic / personal project.</p>
+            </div>
+            <div class="down2">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                    <li><a href="report.html">Report an Issue</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="down3">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="down4">
+                <h3>Connect</h3>
+                <div class="icon">
+                    <a href=""><i class='bx bxl-github'></i></a>
+                    <br>
+                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    <br>
+                    <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>
+                &copy; <span id="year"></span> Designed & Developed by <span class="author">Selva Sejin</span>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="js/login-reg.js"></script>
+<script src="js/vehicles.js"></script>
+<script>
+    let id=localStorage.getItem("vehicleId")
+
+    const data = vehicle[id];
+    const rent=document.getElementById("vehicle")
+    rent.innerHTML=`
+    <div class="vimg">
+    <img src="${data.image}"  class="vehicle-image">
+    </div>
+    <div class="vehicle-details">
+      <h2>${data.name}</h2>
+      <p class="tagline">${data.tagline}</p>
+
+      <ul class="specs">
+        <li><strong>Brand:</strong> ${data.companyName}</li>
+        <li><strong>Fuel:</strong> ${data.fuel}</li>
+        <li><strong>Seats:</strong> ${data.seats}</li>
+        <li><strong>Gears:</strong> ${data.gears}</li>
+      </ul>
+
+      <div class="notes">
+        <p><strong>Conditions:</strong>${data.conditions}</p>
+        <br>
+        <p><strong>Description:</strong>${data.description}</p>
+      </div>
+      <div class="pricing">
+        <div>
+          <span>₹${data.pricePerHour}</span>
+          <small>/ hour</small>
+        </div>
+        <div>
+          <span>₹${data.pricePerDay}</span>
+          <small>/ day</small>
+        </div>
+      </div>
+
+      <button class="book-btn"onclick="window.location.href='bookvehicles.html'">Book Slot</button>
+    </div>
+    `
+</script>
+</html>
