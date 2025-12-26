@@ -464,7 +464,12 @@ footer{
     font-size: 80px;
   }
 
+  .home-content h1 {
+    font-size: 80px;
+  }
+
   .down {
     width: 100%;
   }
 }
+
