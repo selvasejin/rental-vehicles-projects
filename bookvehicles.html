@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexiRide-Booking Slot</title>
+    <link rel="icon" href="image/flexiride logo1.png">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bookvehicles.css">
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <img src="image/flexiride logo1.png" alt="" class="logo">
+        <h1>
+          <i><span class="flexi">Flexi</span><span class="ride">Ride</span></i>
+        </h1>
+      </div>
+      <nav id="nav">
+            <a href="index.html" class="navigation">Home</a>
+            <a href="vehicles.html" class="navigation">Vehicles</a>
+            <a href="aboutus.html" class="navigation">About Us</a>
+            <div class="navigation" id="navigation"></div>
+      </nav>
+    </header>
+    <div id="login-reg"></div>
+    <main class="booking">
+      <h2>Book Your Rental Vehicle</h2>
+      <p>
+        Please fill in the details carefully. Wrong details = booking rejected.
+      </p>
+      <form class="booking-form">
+        <h3 class="h">Personal Details</h3>
+        <section class="form-section">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="field">
+            <label>Date of Birth</label>
+            <input type="date" required>
+          </div>
+
+          <div class="field">
+            <label>Driving Licence Number</label>
+            <input type="text" placeholder="DL Number" required>
+          </div>
+
+          <div class="field">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="10-digit mobile number" required>
+          </div>
+
+          <div class="field">
+            <label>Address</label>
+            <textarea placeholder="Enter full address" rows="3" required></textarea>
+          </div>
+          <div class="field">
+            <label>Upload Driving Licence</label>
+            <input type="file">
+          </div>
+        </section>
+
+        <h3 class="h">Vehicle & Slot Details</h3>
+        <section class="form-section">
+          <div class="field">
+            <label>Select Vehicle</label>
+            <select >
+              <option id="selectvehicle" value="">-- Select Vehicle --</option>
+              <option>Honda Shine</option>
+              <option>Activa 6G</option>
+              <option>Royal Enfield Classic</option>
+              <option>City Cycle</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Vehicle Quantity</label>
+            <select required>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Rental Type</label>
+            <select required>
+              <option value="">-- Select --</option>
+              <option>Hourly</option>
+              <option>Daily</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Select Hours</label>
+            <select>
+              <option value="">-- Hours --</option>
+              <option>1 Hour</option>
+              <option>2 Hours</option>
+              <option>3 Hours</option>
+              <option>4 Hours</option>
+              <option>6 Hours</option>
+              <option>12 Hours</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Select Days</label>
+            <select>
+              <option value="">-- Days --</option>
+              <option>1 Day</option>
+              <option>2 Days</option>
+              <option>3 Days</option>
+              <option>7 Days</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Pickup Date</label>
+            <input type="date" required>
+          </div>
+
+          <div class="field">
+            <label>Pickup Time</label>
+            <input type="time" required>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <label class="checkbox">
+            <input type="checkbox" required>
+            I agree to the rental terms & conditions. Vehicle damage charges
+            apply.
+          </label>
+        </section>
+        <button type="submit" class="book-btn">Confirm Booking</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="down">
+        <div class="down1">
+          <h3>About Project</h3>
+          <p>
+            This project is independently designed and develop by
+            <span>Selva Sejin</span>. All content and functionality are part of
+            academic / personal project.
+          </p>
+        </div>
+        <div class="down2">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+            <li><a href="report.html">Report an Issue</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="down3">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="down4">
+          <h3>Connect</h3>
+          <div class="icon">
+            <a href=""><i class="bx bxl-github"></i> </a>
+            <br>
+            <a href=""><i class="bx bxl-linkedin-square"></i></a>
+            <br>
+            <a href=""><i class="bx bxl-instagram-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          &copy; <span id="year"></span> Designed & Developed by
+          <span class="author">Selva Sejin</span>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="js/vehicles.js"></script>
+  <script src="js/login-reg.js"></script>
+  <script>
+    const id = localStorage.getItem("vehicleId");
+    const a = vehicle[id];
+    document.getElementById("selectvehicle").innerText = a.name;
+
+    function complete(){
+      alert("Sucessfully booked slot")
+      window.history.go("index.html")
+    }
+  </script>
+</html>
