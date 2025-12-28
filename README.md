@@ -9,6 +9,8 @@ Responsive rental platform with vehicle listing, pricing, and booking UI.
 - Responsive layout (mobile-first)
 - Interactive booking UI
 
-## Live Demo
-[<link>] (https://selvasejin.github.io/rental-vehicles-projects/)
+## Screenshots
+
+### Home Page
+![Home](screenshots/home.png)
 
